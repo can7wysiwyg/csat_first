@@ -51,18 +51,52 @@
   }
   
   
+  .nav-item.with-tooltip {
+    position: relative;
+}
+
+.tooltip-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px; /* Set the width of the tooltip content */
+}
+
+.tooltip-menu {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tooltip-item {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.tooltip-content-container {
+    display: flex;
+}
+
+.tooltip-content-item {
+    display: none;
+    flex-grow: 1;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
   
   
   
+
   
-
-
-
-
-
-
-
-
 
 
   .bg-overlay {
