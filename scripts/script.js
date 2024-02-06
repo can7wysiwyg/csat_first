@@ -42,3 +42,24 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuItems = document.querySelectorAll('.with-submenu');
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', function () {
+            const submenu = this.nextElementSibling;
+            submenu.classList.toggle('active');
+        });
+    });
+
+    const backButtons = document.querySelectorAll('.back-button');
+
+    backButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const submenu = this.parentElement;
+            submenu.classList.remove('active');
+        });
+    });
+});
